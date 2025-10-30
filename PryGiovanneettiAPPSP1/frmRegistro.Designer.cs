@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistro));
             lblUsuario = new Label();
             lblContraseña = new Label();
             lblModulo = new Label();
@@ -105,10 +106,10 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.BackColor = SystemColors.ActiveCaptionText;
+            btnAceptar.BackColor = Color.White;
             btnAceptar.Enabled = false;
-            btnAceptar.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAceptar.ForeColor = Color.White;
+            btnAceptar.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAceptar.ForeColor = Color.Black;
             btnAceptar.Location = new Point(181, 256);
             btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
@@ -120,9 +121,9 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = SystemColors.ActiveCaptionText;
-            btnCancelar.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCancelar.ForeColor = Color.White;
+            btnCancelar.BackColor = Color.White;
+            btnCancelar.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancelar.ForeColor = Color.Black;
             btnCancelar.Location = new Point(66, 256);
             btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
@@ -145,9 +146,11 @@
             Controls.Add(lblModulo);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmRegistro";
-            Text = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Registro Usuario";
             ResumeLayout(false);
             PerformLayout();
         }

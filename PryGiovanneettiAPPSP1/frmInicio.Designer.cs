@@ -36,9 +36,9 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(271, 129);
+            lblBienvenida.Location = new Point(261, 126);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(262, 50);
+            lblBienvenida.Size = new Size(328, 62);
             lblBienvenida.TabIndex = 0;
             lblBienvenida.Text = "¡ Bienvenido !";
             // 
@@ -46,23 +46,25 @@
             // 
             lblLogo.AutoSize = true;
             lblLogo.BackColor = SystemColors.ActiveCaptionText;
-            lblLogo.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogo.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogo.ForeColor = Color.Red;
-            lblLogo.Location = new Point(192, 238);
+            lblLogo.Location = new Point(222, 238);
             lblLogo.Name = "lblLogo";
-            lblLogo.Size = new Size(396, 57);
+            lblLogo.Size = new Size(414, 69);
             lblLogo.TabIndex = 1;
             lblLogo.Text = "Sintepart SRL";
             // 
             // frmInicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(lblLogo);
             Controls.Add(lblBienvenida);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmInicio";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Bienvenida";
             ResumeLayout(false);
             PerformLayout();
         }
